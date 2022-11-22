@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* @import  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ebfff0;
+}
+
+section .blur_clr {
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .blur_clr:nth-child(1) {
+    background: #87ffa5;
+    width: 500px;
+    height: 500px;
+    right: -50px;
+    top: -250px;
+}
+
+section .blur_clr:nth-child(2) {
+    background: #51a867;
+    width: 500px;
+    height: 500px;
+    left: -50px;
+    bottom: -250px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    font-size: 0.5rem;
+    color: #8a2435;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header .nav {
+    position: relative;
+    display: flex;
+}
+
+header .nav li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+header .nav li a {
+    color: #306145;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+header .nav li a:hover {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .btn {
+    background: #24878a;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+header .btn:hover {
+    transform: scale(0.9);
+}
+
+.content {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content .contentBx {
+    max-width: 500px;
+}
+
+.content .contentBx h1 {
+    font-size: 4.5rem;
+    color: #000;
+    line-height: 5rem;
+    margin: 10px;
+}
+
+.content .contentBx p {
+    font-size: 1rem;
+    color: #000;
+    margin: 30px 10px;
+}
+
+.content .contentBx .btn {
+    background: #14494b;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-weight: 500;
+    margin: 30px 10px;
+    transition: 0.5s;
+}
+
+.content .contentBx .btn:hover {
+    background: #fff;
+    color: #14494b;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+ 
